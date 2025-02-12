@@ -26,18 +26,18 @@ const Asidebar: React.FC<AsidebarProps> = ({
   collapsedWidth = 60,
   expandedWidth = 250,
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
   const pathname = usePathname();
   return (
     <aside
       className={`relative h-screen bg-gray-800 text-white p-2 transition-all duration-300 ${
-        isOpen ? `w-[${expandedWidth}px]` : `w-[${collapsedWidth}px]`
+        collapsed ? `w-[${expandedWidth}px]` : `w-[${collapsedWidth}px]`
       } ${className}`}
     >
       {/* Toggle Button */}
       <button
         className="border-2 border-gray-500 rounded p-2 mb-4"
-        onClick={() => setIsOpen((prev) => !prev)}
+        onClick={() => setCollapsed((prev) => !prev)}
       >
         <Image src={icon} alt="Toggle Sidebar" width={30} height={30} />
       </button>
@@ -55,7 +55,7 @@ const Asidebar: React.FC<AsidebarProps> = ({
                 ${isActive ? "bg-gray-600" : "hover:bg-gray-700 "}`}
             >
               <Image src={item.icon} alt={item.label} width={30} height={30} />
-              {isOpen && <span className="font-bold">{item.label}</span>}
+              {collapsed && <span className="font-bold">{item.label}</span>}
             </Link>
           );
         })}
