@@ -33,7 +33,7 @@ export default function RootLayout({
           <Asidebar
             items={sidebarItems}
             icon={sidebarIcon}
-            collapsedWidth={50}
+            collapsedWidth={80}
             expandedWidth={300}
             backgroundColor="bg-gray-900"
             textColor="text-gray-100"
