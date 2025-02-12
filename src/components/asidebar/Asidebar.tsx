@@ -28,8 +28,8 @@ const Asidebar: React.FC<AsidebarProps> = ({
   className = "",
   items,
   icon,
-  collapsedWidth = 60,
-  expandedWidth = 250,
+  collapsedWidth,
+  expandedWidth,
   backgroundColor = "bg-gray-800",
   textColor = "text-white",
   iconColor = "text-gray-400",
@@ -40,9 +40,8 @@ const Asidebar: React.FC<AsidebarProps> = ({
   const pathname = usePathname();
   return (
     <aside
-      className={`relative h-screen p-2 transition-all duration-300 ${backgroundColor} ${textColor} ${className} ${
-        collapsed ? `w-[${collapsedWidth}px]` : `w-[${expandedWidth}px]`
-      }`}
+      className={`relative h-screen p-2 transition-all duration-300 ${backgroundColor} ${textColor} ${className}`}
+      style={{ width: collapsed ? collapsedWidth : expandedWidth }}
     >
       {/* Toggle Button */}
       <button
