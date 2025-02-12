@@ -15,7 +15,11 @@ A **customizable, collapsible sidebar component** for **Next.js**, built with **
 
 ## 📸 Preview
 
-https://github.com/user-attachments/assets/fe31838e-06e0-4b0e-8a36-1c2ad8b1561a
+
+Uploading Screen Recording 2025-02-12 at 4.47.36 PM.mov…
+
+
+
 
 ## 📦 Installation
 
