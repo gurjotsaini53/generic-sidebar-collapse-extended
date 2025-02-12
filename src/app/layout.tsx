@@ -32,9 +32,14 @@ export default function RootLayout({
         <div className="flex flex-row">
           <Asidebar
             items={sidebarItems}
-            collapsedWidth={50}
             icon={sidebarIcon}
-            expandedWidth={400}
+            collapsedWidth={50}
+            expandedWidth={300}
+            backgroundColor="bg-gray-900"
+            textColor="text-gray-100"
+            iconColor="text-gray-400"
+            activeBg="bg-blue-600"
+            activeText="text-white"
           />
           <main className="flex-1 p-2">{children}</main>
         </div>
