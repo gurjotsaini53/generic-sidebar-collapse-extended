@@ -57,15 +57,22 @@ const Asidebar: React.FC<AsidebarProps> = ({
           const isActive = pathname === item.route;
 
           return (
-            <Link
-              key={index}
-              href={item.route}
-              className={`flex items-center gap-3 p-2 rounded transition-all duration-200 ${
-                isActive ? `${activeBg} ${activeText}` : "hover:bg-gray-700"
-              }`}
-            >
-              <Image src={item.icon} alt={item.label} width={30} height={30} />
-              {!collapsed && <span className="font-bold">{item.label}</span>}
+            <Link key={index} href={item.route}>
+              <div
+                className={`flex items-center ${
+                  collapsed ? "justify-center " : "gap-3 "
+                } my-2 p-2 rounded transition-all ease-out duration-200 ${
+                  isActive ? `${activeBg} ${activeText}` : "hover:bg-gray-700"
+                }`}
+              >
+                <Image
+                  src={item.icon}
+                  alt={item.label}
+                  width={30}
+                  height={30}
+                />
+                {!collapsed && <span className="font-bold">{item.label}</span>}
+              </div>
             </Link>
           );
         })}
