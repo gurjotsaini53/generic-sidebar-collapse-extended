@@ -2,10 +2,6 @@
 
 A **customizable, collapsible sidebar component** for **Next.js**, built with **React** and **Tailwind CSS**. Supports dynamic navigation, smooth transitions, and customizable widths.
 
-
-
-
-
 ## 🎯 Features
 
 - ✅ **Collapsible Sidebar** - Expand/collapse smoothly.
@@ -16,10 +12,7 @@ A **customizable, collapsible sidebar component** for **Next.js**, built with **
 ## 📸 Preview
 
 
-Uploading Screen Recording 2025-02-12 at 4.47.36 PM.mov…
-
-
-
+https://github.com/user-attachments/assets/e8038de8-163e-43f6-9688-49f44b390fdc
 
 ## 📦 Installation
 
